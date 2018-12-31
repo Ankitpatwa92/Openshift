@@ -35,3 +35,6 @@
 
 #### Get all pod/templates/svc/configmaps/route
 ``` oc get pods/templates/svc/configmaps/route```
+
+#### View all params of template
+``` oc process template-name ```
