@@ -62,3 +62,33 @@ Session Affinity:       None
 Events:                 <none>
 
 ```
+
+#### Get all nodes 
+```
+oc get nodes     //List all nodes including master 
+```
+#### Get all pods with ip and node
+```
+oc get pod -o wide
+```
+
+#### List out all routes
+```
+oc get routes
+```
+
+#### List out services with end points
+```
+oc get ep
+```
+
+#### List out all image stream from all namespace
+```
+oc get is --all-namespaces
+```
+
+#### Get yaml file of Service
+```
+oc get svc service-name -o yaml
+oc get svc service-name -o yaml --export=true >service-name-yaml.backup
+```
