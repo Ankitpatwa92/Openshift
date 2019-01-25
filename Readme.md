@@ -38,3 +38,27 @@
 
 #### View all params of template
 ``` oc process template-name ```
+
+#### List out all services
+```
+oc get svc
+```
+
+#### Describe Particular Service
+```
+oc describe svc svc_name     ///this will show service ip and all assocaited pod ip
+
+Name:                   service_name
+Namespace:              Project_name
+Labels:                 app=service_name-deployment-template
+                        project=Project_name
+                        template=java-services-template
+Type:                   NodePort
+IP:                     Service_IP
+Port:                   http    80/TCP
+NodePort:               http    31816/TCP
+Endpoints:              Pod ip
+Session Affinity:       None
+Events:                 <none>
+
+```
