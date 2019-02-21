@@ -92,3 +92,5 @@ oc get is --all-namespaces
 oc get svc service-name -o yaml
 oc get svc service-name -o yaml --export=true >service-name-yaml.backup
 ```
+#### View host file
+`oc exec pod_name  -- cat /etc/hosts`
