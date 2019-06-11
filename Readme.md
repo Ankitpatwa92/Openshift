@@ -25,7 +25,8 @@
 
 
 #### Create Config and Deploy Template file (Create pod using yaml)
-```oc new-app -f D:/path/of/yaml/deploy.yaml --param SERVICE_VERSION="1.0.0" --param DOCKER_REGISTRY="docker-registry.xyz.svc:999/test```
+```oc new-app -f D:/path/of/yaml/deploy.yaml --param SERVICE_VERSION="1.0.0"
+   --param DOCKER_REGISTRY="docker-registry.xyz.svc:999/test```
 
 #### Pass Parameter
 ```
