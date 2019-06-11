@@ -29,8 +29,8 @@
    --param DOCKER_REGISTRY="docker-registry.xyz.svc:999/test```
 
 #### Pass Parameter
-```
-oc new-app -f  yaml_file_path/deploy.yaml  --param PROJECT_NAME="my_project" --param DOCKER_REGISTRY="my docker registry"
+```oc new-app -f  yaml_file_path/deploy.yaml  --param PROJECT_NAME="my_project" 
+      --param DOCKER_REGISTRY="my docker registry"
 ```
 
 #### Take Parameter from file
