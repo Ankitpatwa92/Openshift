@@ -27,6 +27,11 @@
 #### Create Config and Deploy Template file (Create pod using yaml)
 ```oc new-app -f D:/path/of/yaml/deploy.yaml --param SERVICE_VERSION="1.0.0" --param DOCKER_REGISTRY="docker-registry.xyz.svc:999/test```
 
+#### Pass Parameter
+```
+oc new-app -f  yaml_file_path/deploy.yaml  --param PROJECT_NAME="my_project" --param DOCKER_REGISTRY="my docker registry"
+```
+
 #### Take Parameter from file
 ``` oc new-app -f D:/path/to/your/config/file/test.yaml  --param-file=D:/path/to/enviornemt/file/test-dev.env```
 
