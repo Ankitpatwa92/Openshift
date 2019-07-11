@@ -102,3 +102,7 @@ oc get svc service-name -o yaml --export=true >service-name-yaml.backup
 ```
 #### View host file
 `oc exec pod_name  -- cat /etc/hosts`
+
+#### Set Proxy to pod
+oc set env dc/my-dc -e HTTP_PROXY="http://admin:admin@100.196.110.22:80" -e NO_PROXY=".svc" -e HTTPS_PROXY="https://admin:admin@100.196.110.220:443"
+
