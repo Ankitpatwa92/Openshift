@@ -106,3 +106,6 @@ oc get svc service-name -o yaml --export=true >service-name-yaml.backup
 #### Set Proxy to pod
 oc set env dc/my-dc -e HTTP_PROXY="http://admin:admin@100.196.110.22:80" -e NO_PROXY=".svc" -e HTTPS_PROXY="https://admin:admin@100.196.110.220:443"
 
+
+#### See logs in Openshift
+ oc  logs  my-pod-1-q8k7h  -c vault-init              //c is container name and mypod is pod name
