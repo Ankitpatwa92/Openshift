@@ -109,3 +109,12 @@ oc set env dc/my-dc -e HTTP_PROXY="http://admin:admin@100.196.110.22:80" -e NO_P
 
 #### See logs in Openshift
  oc  logs  my-pod-1-q8k7h  -c vault-init              //c is container name and mypod is pod name
+ 
+#### scale down all dc
+oc get dc -n ${Project_name} | oc scale dc $(awk  '{if(NR>1) print $1}') --replicas=0 -n ${Project_name}
+
+#### set lable to pod
+oc label <NODE_NAME>  node1=<NODE_NAME>
+
+#### describe node
+oc describe node <NODE_NAME>
